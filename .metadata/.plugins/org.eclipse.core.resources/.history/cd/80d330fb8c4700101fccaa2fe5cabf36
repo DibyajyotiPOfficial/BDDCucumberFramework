@@ -1,0 +1,26 @@
+package cura_healthcare_services;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CURA_ENDToEND_FLOW {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().window().maximize();
+		driver.get("https://katalon-demo-cura.herokuapp.com/");
+		String expectedTitle = "CURA Healthcare Service";
+		if (expectedTitle.equals(driver.getTitle())) {
+			System.out.println(expectedTitle + " : Matches");
+		} else {
+
+		}
+
+	}
+
+}

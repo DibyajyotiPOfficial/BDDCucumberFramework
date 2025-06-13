@@ -1,0 +1,19 @@
+package cura_healthcare_services;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CURA_ENDToEND_FLOW {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().window().maximize();
+		driver.get("https://katalon-demo-cura.herokuapp.com/");
+
+	}
+
+}

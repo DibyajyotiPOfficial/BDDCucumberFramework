@@ -1,0 +1,119 @@
+package cura_healthcare_services;
+
+import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class CURA_ENDToEND_FLOW {
+
+	public static void main(String[] args) throws Exception {
+
+		System.setProperty("webdriver.chrome.driver",
+				"G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+
+		// Disable Chrome password manager popup
+		ChromeOptions options = new ChromeOptions();
+		Map<String, Object> prefs = new HashMap<>();
+		prefs.put("credentials_enable_service", false);
+		prefs.put("profile.password_manager_enabled", false);
+		options.setExperimentalOption("prefs", prefs);
+
+		// Remove automation info bar
+		options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
+		options.setExperimentalOption("useAutomationExtension", false);
+
+		// Optional: Use incognito or clean profile
+		// options.addArguments("--incognito");
+
+		WebDriver driver = new ChromeDriver(options);
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+		driver.get("https://katalon-demo-cura.herokuapp.com/");
+
+		// Title Validation
+		String expectedTitle = "CURA Healthcare Service";
+		if (expectedTitle.equals(driver.getTitle())) {
+			System.out.println(expectedTitle + " : Matches.");
+		} else {
+			System.out.println(expectedTitle + " : Does not Match. Actual: " + driver.getTitle());
+		}
+
+		// URL Validation
+		String expectedURL = "https://katalon-demo-cura.herokuapp.com/";
+		if (expectedURL.equals(driver.getCurrentUrl())) {
+			System.out.println(expectedURL + " : Matches.");
+		} else {
+			System.out.println(expectedURL + " : Does not Match. Actual: " + driver.getCurrentUrl());
+		}
+
+		Thread.sleep(3000);
+		driver.findElement(By.id("menu-toggle")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//a[contains(text(),'Home')]")).click();
+		System.out.println("Page Refreshed: " + driver.getTitle() + " and " + driver.getCurrentUrl());
+
+		/*
+		 * //Verifying email link
+		 * driver.findElement(By.linkText("info@katalon.com")).click();
+		 */
+
+		// Proceed to Login
+		
+		  driver.findElement(By.id("btn-make-appointment")).click(); WebElement text =
+		  driver.findElement(By.
+		  xpath("//p[contains(text(),'Please login to make appointment.')]")); if
+		  (text.isDisplayed()) {
+		  driver.findElement(By.id("txt-username")).sendKeys("John Doe");
+		  driver.findElement(By.id("txt-password")).sendKeys("ThisIsNotAPassword");
+		  driver.findElement(By.id("btn-login")).click();
+		  System.out.println("Login successful. Proceeding with booking appointment.");
+		  } else { System.out.println("Invalid or unexpected login page."); }
+		 
+		/*
+		 * //VERIFY INVALID LOGIN
+		 * driver.findElement(By.id("btn-make-appointment")).click(); WebElement text =
+		 * driver.findElement(By.
+		 * xpath("//p[contains(text(),'Please login to make appointment.')]")); if
+		 * (text.isDisplayed()) {
+		 * driver.findElement(By.id("txt-username")).sendKeys("John Do");
+		 * driver.findElement(By.id("txt-password")).sendKeys("ThisIsNotAPasswor");
+		 * driver.findElement(By.id("btn-login")).click(); WebElement
+		 * credentialscheck=driver.findElement(By.
+		 * xpath("//p[contains(text(),'Login failed! Please ensure the username and password are valid.')]"
+		 * )); System.out.println("Invalid Credentials." + credentialscheck.getText());
+		 * } else { System.out.println("Invalid or unexpected login page."); }
+		 */
+		
+		  //Booking an appointment 
+		  WebElement dropdownmenu = driver.findElement(By.id("combo_facility")); 
+		  Select select = new Select(dropdownmenu);
+		  //selecting facility
+		  select.selectByVisibleText("Hongkong CURA Healthcare Center");
+		  //select chkbox_hospital_readmission
+		  driver.findElement(By.id("chk_hospotal_readmission")).click();
+		  //select radio_program_medicaid
+		  driver.findElement(By.id("radio_program_medicaid"));
+		  //select appointment date
+		  driver.findElement(By.id("txt_visit_date")).sendKeys("31/10/1994");
+		  //Passing comments
+		  driver.findElement(By.id("txt_comment")).sendKeys("Book Appointment Test.");
+		  //click book appointment button
+		  driver.findElement(By.id("btn-book-appointment")).click();
+		  //check successful booking confirmation
+		  
+		 
+
+		//
+
+//        driver.quit();
+	}
+}
