@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="G:\2025\My Automation Project\OrangeHRM\src"/>
+			<item value="G:\2025\My Automation Project\Orange HRM"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -13,6 +15,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -62,11 +65,13 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="OrangeHRM"/>
 			<item value="cura_healthcare_services"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="OrangeHRM"/>
 			<item value="cura_healthcare_services"/>
 		</list>
 		<list key="version">
