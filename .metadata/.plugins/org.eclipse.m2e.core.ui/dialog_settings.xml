@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="G:\2025\My Automation Project\OrangeHRM\src\orangeHRM\OrangeHRM_EndToEnd_Validation.java"/>
 			<item value="G:\2025\My Automation Project\OrangeHRM\src"/>
 			<item value="G:\2025\My Automation Project\Orange HRM"/>
 		</list>
@@ -65,12 +66,14 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="VWO"/>
 			<item value="OrangeHRM"/>
 			<item value="cura_healthcare_services"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="VWO"/>
 			<item value="OrangeHRM"/>
 			<item value="cura_healthcare_services"/>
 		</list>
