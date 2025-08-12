@@ -1,0 +1,53 @@
+package StepDefinitions;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class OrangeHRMDataSteps {
+	
+WebDriver driver = null;
+	
+	@Given("Browser opens and user is on the login page of OrangeHRM")
+	public void browser_opens_and_user_is_on_the_login_page_of_orange_hrm() {
+		System.setProperty("webdriver.chrome.driver",
+				"G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().window().maximize();
+	}
+
+	@When("User enters valid (.*) and (.*)")
+	public void user_enters_valid_username_and_password(String username, String password) {
+	   driver.findElement(By.xpath("//input[@name='username']")).sendKeys(username);
+	   driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
+	}
+
+	@And("Click on login button")
+	public void click_on_login_button() {
+	  driver.findElement(By.xpath("//button[text()=' Login ']")).click();
+	}
+
+	@Then("User should be logged in and lands in dashboard page")
+	public void user_should_be_logged_in_and_lands_in_dashboard_page() {
+	   System.out.println("User logged in & " + driver.findElement(By.xpath("//h6[text()='Dashboard']")).getText() + " page is displayed.");
+	}
+	@And("Logout from application")
+	public void logout_from_application() {
+	    driver.findElement(By.xpath("//span[@class='oxd-userdropdown-tab']")).click();
+	    driver.findElement(By.xpath("//a[text()='Logout']")).click();
+	}
+
+
+
+
+
+}

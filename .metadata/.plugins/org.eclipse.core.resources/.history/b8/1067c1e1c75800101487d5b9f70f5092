@@ -1,0 +1,48 @@
+package vwo_endtoend_functionality;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class VWO_EndToEndFunctionality {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver",
+				"G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().window().maximize();
+
+		// TEST CASE 1
+		driver.get(
+				"https://vwo.com/free-trial/?utm_medium=website&utm_source=login-page&utm_campaign=mof_eg_loginpage");
+		driver.findElement(By.id("page-v1-step1-email")).sendKeys("pdibyajyoti772@syscorp.com");
+		driver.findElement(By.id("page-free-trial-step1-cu-gdpr-consent-checkbox")).click();
+		driver.findElement(By.xpath("//button[text()='Create a Free Trial Account']")).click();
+
+		// TEST CASE 2
+		WebElement passwordPage = driver
+				.findElement(By.xpath("//h4[normalize-space(text())='Set up your password to get started']"));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3000));
+		wait.until(ExpectedConditions.visibilityOf(passwordPage));
+		driver.findElement(By.id("page-v1-fname")).sendKeys("dibyajyoti");
+		driver.findElement(By.id("page-v1-lname")).sendKeys("pattnaik");
+		driver.findElement(By.id("page-v1-pnumber")).sendKeys("9900029692");
+		driver.findElement(By.id("page-v1-pwd")).sendKeys("Djpsd@636261");
+		WebElement pwdPageCheckBox = driver.findElement(By.id("page-free-trial-step2-cu-gdpr-consent-checkbox"));
+		if (pwdPageCheckBox.isSelected()) {
+			System.out.println("Is Selected!!");
+		} else {
+			System.out.println("Is Not Selected!!");
+		}
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//button[normalize-space(text())='Create Account']")).click();
+	}
+
+}

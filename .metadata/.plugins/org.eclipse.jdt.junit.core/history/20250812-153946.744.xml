@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunTest" project="CucumberBDDCMD" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="Runner.RunTest" time="0.092">
+    <testsuite name="Validate login functonality" time="0.092">
+      <testcase name="Check login with valid credentials" classname="Validate login functonality" time="0.089">
+        <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at steps.LoginSteps.user_is_on_login_page1(LoginSteps.java:12)&#13;
+	at ✽.user is on login page1(file:///G:/2025/My%20Automation%20Project/CucumberBDDCMD/src/test/resources/Features/login.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Check login with invalid credentials" classname="Validate login functonality" time="0.003">
+        <error>io.cucumber.java.PendingException: TODO: implement me&#13;
+	at steps.LoginSteps.user_is_on_login_page(LoginSteps.java:33)&#13;
+	at ✽.user is on login page(file:///G:/2025/My%20Automation%20Project/CucumberBDDCMD/src/test/resources/Features/login.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

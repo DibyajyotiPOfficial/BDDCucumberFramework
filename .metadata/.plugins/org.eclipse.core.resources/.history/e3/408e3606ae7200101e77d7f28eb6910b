@@ -1,0 +1,4 @@
+Feature: to test google search functionality
+
+Scenario: google search is working.
+

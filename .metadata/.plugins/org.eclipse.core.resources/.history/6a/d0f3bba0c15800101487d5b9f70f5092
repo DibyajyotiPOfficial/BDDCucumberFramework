@@ -1,0 +1,31 @@
+package vwo_endtoend_functionality;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class VWO_EndToEndFunctionality {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver",
+				"G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().window().maximize();
+
+		// TEST CASE 1
+		driver.get(
+				"https://vwo.com/free-trial/?utm_medium=website&utm_source=login-page&utm_campaign=mof_eg_loginpage");
+		driver.findElement(By.id("page-v1-step1-email")).sendKeys("pdibyajyoti772@syscorp.com");
+		driver.findElement(By.id("page-free-trial-step1-cu-gdpr-consent-checkbox")).click();
+		driver.findElement(By.xpath("//button[text()='Create a Free Trial Account']")).click();
+		
+		// TEST CASE 
+		
+
+	}
+
+}

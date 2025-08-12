@@ -1,0 +1,31 @@
+package pageFactory;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class OrangleHRM_Login_PF {
+	
+	@FindBy(xpath="//input[@placeholder='Username']")
+	WebElement input_username;
+	
+	@FindBy(xpath="//input[@placeholder='Password']")
+	WebElement input_password;
+	
+	@FindBy(xpath="//button[@type='submit']")
+	WebElement btn_login;
+	
+	
+	public void enterUsername() {
+		input_username.sendKeys("Admin");
+	}
+	public void enterPassword() {
+		input_password.sendKeys("admin123");
+	}
+	public void clickLoginBtn() {
+		btn_login.click();
+	}
+	
+	
+	
+
+}

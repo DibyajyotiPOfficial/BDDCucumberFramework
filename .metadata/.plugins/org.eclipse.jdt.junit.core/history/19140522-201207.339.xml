@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StepDefinitions.TestRunnerForHooks" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="StepDefinitions.TestRunnerForHooks" time="0.984">
+    <testcase name="(check login functionality)" classname="check login functionality" time="0.941"/>
+  </testsuite>
+</testrun>

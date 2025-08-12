@@ -1,0 +1,61 @@
+package StepDefinitions;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.Assert;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.*;
+
+import pages.loginpage;
+
+public class LoginStepsPOM {
+
+    WebDriver driver;
+    loginpage login;
+
+    @Before
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver",
+                "G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().window().maximize();
+    }
+
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+            System.out.println("✅ Browser closed successfully.");
+        }
+    }
+
+    @Given("the user opens the OrangeHRM login page")
+    public void openLoginPage() {
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        login = new loginpage(driver);
+        System.out.println("✅ Browser launched and navigated to login page.");
+    }
+
+    @When("the user enters username {string} and password {string} using POM")
+    public void enterCredentials(String username, String password) {
+        login.enterUsername(username);
+        login.enterPassword(password);
+    }
+
+    @And("submits the login form")
+    public void submitLogin() {
+        login.clickLoginBtn();
+    }
+
+    @Then("the user should be redirected to the dashboard using POM")
+    public void verifyDashboard() {
+        boolean isDashboardVisible = login.isDashboardDisplayed();
+        Assert.assertTrue("❌ Dashboard not displayed!", isDashboardVisible);
+        System.out.println("✅ User logged in & Dashboard page is displayed.");
+    }
+}

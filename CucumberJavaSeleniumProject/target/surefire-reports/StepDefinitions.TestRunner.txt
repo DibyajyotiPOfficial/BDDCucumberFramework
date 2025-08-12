@@ -1,0 +1,141 @@
+-------------------------------------------------------------------------------
+Test set: StepDefinitions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 139.9 s <<< FAILURE! -- in StepDefinitions.TestRunner
+Check homepage functionality.Check logout link -- Time elapsed: 11.49 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user is on the login page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is on the login page")
+public void user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters the username and password")
+public void user_enters_the_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("hits the login button")
+public void hits_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user is navigated to the dashboard page")
+public void user_is_navigated_to_the_dashboard_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on welcome link")
+public void user_clicks_on_welcome_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Logout link is displayed")
+public void logout_link_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Check homepage functionality.Verigy quick launch tool bar is present -- Time elapsed: 10.25 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user is on the login page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is on the login page")
+public void user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters the username and password")
+public void user_enters_the_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("hits the login button")
+public void hits_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user is navigated to the dashboard page")
+public void user_is_navigated_to_the_dashboard_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user lands on the dashboard page")
+public void user_lands_on_the_dashboard_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Quick launch toolbar is displayed")
+public void quick_launch_toolbar_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+OrangeHRM Login Functionality.User should be able to login successfully with given data #1 -- Time elapsed: 11.44 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User passes valid "Admin" and "admin123"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("User passes valid {string} and {string}")
+public void user_passes_valid_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+OrangeHRM Login Functionality.User should be able to login successfully with given data #2 -- Time elapsed: 9.635 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User passes valid "Admin" and "admin124"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("User passes valid {string} and {string}")
+public void user_passes_valid_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+OrangeHRM Login Functionality.User should be able to login successfully with given data #3 -- Time elapsed: 9.448 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'User passes valid "Admin" and "admin125"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("User passes valid {string} and {string}")
+public void user_passes_valid_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Classic Login Functionality Test.Verify login with valid credentials using classic flow -- Time elapsed: 10.27 s <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'the user is on the login page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the login page")
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user enters valid username and password")
+public void the_user_enters_valid_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("clicks the login button")
+public void clicks_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should be navigated to the home page")
+public void the_user_should_be_navigated_to_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

@@ -1,0 +1,29 @@
+package StepDefinitions;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginStepsPOM {
+
+	@Given("the user opens the OrangeHRM login page")
+	public void openLoginPage() {
+	    // POM logic to open login page
+	}
+
+	@When("the user enters username {string} and password {string} using POM")
+	public void enterCredentials(String username, String password) {
+	    // POM logic to enter credentials
+	}
+
+	@And("submits the login form")
+	public void submitLogin() {
+	    // POM logic to click login
+	}
+
+	@Then("the user should land on the OrangeHRM dashboard")
+	public void verifyDashboard() {
+	    // POM logic to verify dashboard
+	}
+}

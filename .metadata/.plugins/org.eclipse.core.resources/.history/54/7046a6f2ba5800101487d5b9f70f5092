@@ -1,0 +1,12 @@
+package vwo_endtoend_functionality;
+
+public class VWO_EndToEndFunctionality {
+
+	public static void main(String[] args) {
+
+		System.setProperty("webdriver.chrome.driver",
+				"G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+
+	}
+
+}

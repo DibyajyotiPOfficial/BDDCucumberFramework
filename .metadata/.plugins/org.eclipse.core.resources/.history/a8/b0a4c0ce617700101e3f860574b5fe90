@@ -1,0 +1,10 @@
+package Runner;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/Features/BackgroundDemo/BackgroundDemo.feature", glue = {
+		"StepsForBackground" }, monochrome = true, plugin = { "pretty",
+				"html:target/Reports-HTML/CMD.html" })
+
+public class TestRun {
+
+}

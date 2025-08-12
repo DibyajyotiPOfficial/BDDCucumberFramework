@@ -1,0 +1,40 @@
+package StepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.cucumber.java.Before;
+import io.cucumber.java.After;
+
+public class Hooks {
+
+    public static WebDriver driver;
+
+    @Before
+    public void setUp() {
+        try {
+            // ✅ Automatically handles driver download and setup
+            WebDriverManager.chromedriver().setup();
+
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+
+            driver = new ChromeDriver(options);
+            driver.manage().window().maximize();
+            driver.get("https://opensource-demo.orangehrmlive.com/");
+            System.out.println("✅ Browser launched and navigated to login page.");
+        } catch (Exception e) {
+            System.err.println("❌ Failed to initialize ChromeDriver: " + e.getMessage());
+            throw new RuntimeException("Driver setup failed", e);
+        }
+    }
+
+    @After
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+            System.out.println("✅ Browser closed successfully.");
+        }
+    }
+}

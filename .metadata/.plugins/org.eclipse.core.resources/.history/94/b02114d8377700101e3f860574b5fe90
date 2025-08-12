@@ -1,0 +1,13 @@
+Feature: Check homepage functionality
+
+Scenario: Check logout link
+
+Given User is logged in
+When User clicks on welcome link
+Then Logout link is displayed
+
+Scenario: Verigy quick launch tool bar is present
+
+Given User is logged in
+When user lands on the dashboard page
+Then Quick launch toolbar is displayed

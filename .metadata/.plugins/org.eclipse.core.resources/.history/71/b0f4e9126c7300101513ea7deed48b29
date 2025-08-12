@@ -1,0 +1,36 @@
+package StepDefinitions;
+
+import java.time.Duration;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import io.cucumber.java.Before;
+import io.cucumber.java.After;
+
+public class Hooks {
+
+    public static WebDriver driver;
+
+    @Before
+    public void setup() {
+        System.setProperty("webdriver.chrome.driver", 
+            "G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--start-maximized");
+        options.addArguments("--headless=new"); // Prevent crashes during startup
+
+        driver = new ChromeDriver(options);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    }
+
+    @After
+    public void teardown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+}

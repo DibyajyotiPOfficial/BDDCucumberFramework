@@ -1,0 +1,49 @@
+package StepDefinitions;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginStepsPOM {
+	
+	WebDriver driver = null;
+
+	@Given("the user opens the OrangeHRM login page")
+	public void openLoginPage() {
+		
+		System.setProperty("webdriver.chrome.driver",
+				"G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().window().maximize();
+
+	}
+
+	@When("the user enters username {string} and password {string} using POM")
+	public void enterCredentials(String username, String password) {
+		
+		
+		
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys(username);
+		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
+	}
+
+	@And("submits the login form")
+	public void submitLogin() {
+		
+		driver.findElement(By.xpath("//button[text()=' Login ']")).click();
+	}
+
+	@Then("the user should be redirected to the dashboard using POM")
+	public void verifyDashboard() {
+		System.out.println("User logged in & " + driver.findElement(By.xpath("//h6[text()='Dashboard']")).getText() + " page is displayed.");
+	}
+}

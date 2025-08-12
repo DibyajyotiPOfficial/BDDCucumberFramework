@@ -1,0 +1,43 @@
+package StepsForHooks;
+
+import java.sql.Time;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class HooksStepsDemo {
+	
+	WebDriver driver = null;
+	
+	public void browserSetup() {
+		System.setProperty("webdriver.chrome.driver",
+				"G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(1000));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().window().maximize();
+		
+	}
+
+	@Given("now user is in the login page")
+	public void now_user_is_in_the_login_page() {
+	}
+
+	@When("if user enters username and password")
+	public void if_user_enters_username_and_password() {
+	}
+
+	@And("clicks on the login button")
+	public void clicks_on_the_login_button() {
+	}
+
+	@Then("user then navigates to landing page")
+	public void user_then_navigates_to_landing_page() {
+	}
+
+}

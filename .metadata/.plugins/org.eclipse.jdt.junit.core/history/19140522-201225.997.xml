@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="StepDefinitions.TestRunner_WithTags" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="StepDefinitions.TestRunner_WithTags" time="0.024">
+    <testcase name="Sample1" classname="Feature to demo tags" time="0.007"/>
+    <testcase name="Sample2" classname="Feature to demo tags" time="0.0"/>
+  </testsuite>
+</testrun>

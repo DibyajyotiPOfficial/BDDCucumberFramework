@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="StepDefinitions.TestRunner" time="139.918" tests="9" errors="6" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="G:\2025\My Automation Project\CucumberJavaSeleniumProject\target\test-classes;G:\2025\My Automation Project\CucumberJavaSeleniumProject\target\classes;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-java\7.27.0\cucumber-java-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-core\7.27.0\cucumber-core-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-gherkin\7.27.0\cucumber-gherkin-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.27.0\cucumber-gherkin-messages-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\gherkin\33.1.0\gherkin-33.1.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\messages\28.1.0\messages-28.1.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\pretty-formatter\2.0.1\pretty-formatter-2.0.1.jar;C:\Users\pattn\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\testng-xml-formatter\0.5.0\testng-xml-formatter-0.5.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\pattn\.m2\repository\io\cucumber\datatable\7.27.0\datatable-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-plugin\7.27.0\cucumber-plugin-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\docstring\7.27.0\docstring-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\html-formatter\21.13.0\html-formatter-21.13.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\junit-xml-formatter\0.8.0\junit-xml-formatter-0.8.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\pattn\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-junit\7.27.0\cucumber-junit-7.27.0.jar;C:\Users\pattn\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\pattn\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-java\4.34.0\selenium-java-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-api\4.34.0\selenium-api-4.34.0.jar;C:\Users\pattn\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.34.0\selenium-chrome-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.34.0\selenium-chromium-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-json\4.34.0\selenium-json-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.34.0\selenium-manager-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.34.0\selenium-devtools-v136-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.34.0\selenium-devtools-v137-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.34.0\selenium-devtools-v138-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.34.0\selenium-edge-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.34.0\selenium-firefox-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-http\4.34.0\selenium-http-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.34.0\selenium-ie-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.34.0\selenium-remote-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\pattn\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\pattn\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\pattn\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\pattn\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-api\1.51.0\opentelemetry-api-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-context\1.51.0\opentelemetry-context-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.51.0\opentelemetry-exporter-logging-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.51.0\opentelemetry-sdk-common-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.51.0\opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.51.0\opentelemetry-sdk-extension-autoconfigure-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.51.0\opentelemetry-sdk-trace-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.51.0\opentelemetry-sdk-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.51.0\opentelemetry-sdk-metrics-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.51.0\opentelemetry-sdk-logs-1.51.0.jar;C:\Users\pattn\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-os\4.34.0\selenium-os-4.34.0.jar;C:\Users\pattn\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.34.0\selenium-safari-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-support\4.34.0\selenium-support-4.34.0.jar;C:\Users\pattn\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\pattn\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\pattn\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\pattn\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\pattn\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\pattn\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\pattn\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\pattn\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\pattn\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\pattn\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\pattn\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\pattn\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\pattn\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\pattn\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\pattn\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\pattn\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\pattn\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\pattn\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\pattn\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\pattn\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\pattn\AppData\Local\Temp\surefire10937770249801606500\surefirebooter-20250812144830692_3.jar C:\Users\pattn\AppData\Local\Temp\surefire10937770249801606500 2025-08-12T14-48-27_351-jvmRun1 surefire-20250812144830692_1tmp surefire_0-20250812144830692_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="G:\2025\My Automation Project\CucumberJavaSeleniumProject\target\test-classes;G:\2025\My Automation Project\CucumberJavaSeleniumProject\target\classes;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-java\7.27.0\cucumber-java-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-core\7.27.0\cucumber-core-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-gherkin\7.27.0\cucumber-gherkin-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.27.0\cucumber-gherkin-messages-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\gherkin\33.1.0\gherkin-33.1.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\messages\28.1.0\messages-28.1.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\pretty-formatter\2.0.1\pretty-formatter-2.0.1.jar;C:\Users\pattn\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\testng-xml-formatter\0.5.0\testng-xml-formatter-0.5.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\pattn\.m2\repository\io\cucumber\datatable\7.27.0\datatable-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-plugin\7.27.0\cucumber-plugin-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\docstring\7.27.0\docstring-7.27.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\html-formatter\21.13.0\html-formatter-21.13.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\junit-xml-formatter\0.8.0\junit-xml-formatter-0.8.0.jar;C:\Users\pattn\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\pattn\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\pattn\.m2\repository\io\cucumber\cucumber-junit\7.27.0\cucumber-junit-7.27.0.jar;C:\Users\pattn\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\pattn\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-java\4.34.0\selenium-java-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-api\4.34.0\selenium-api-4.34.0.jar;C:\Users\pattn\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.34.0\selenium-chrome-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.34.0\selenium-chromium-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-json\4.34.0\selenium-json-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.34.0\selenium-manager-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.34.0\selenium-devtools-v136-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.34.0\selenium-devtools-v137-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.34.0\selenium-devtools-v138-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.34.0\selenium-edge-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.34.0\selenium-firefox-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-http\4.34.0\selenium-http-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.34.0\selenium-ie-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.34.0\selenium-remote-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\pattn\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\pattn\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\pattn\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\pattn\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-api\1.51.0\opentelemetry-api-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-context\1.51.0\opentelemetry-context-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.51.0\opentelemetry-exporter-logging-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.51.0\opentelemetry-sdk-common-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.51.0\opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.51.0\opentelemetry-sdk-extension-autoconfigure-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.51.0\opentelemetry-sdk-trace-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.51.0\opentelemetry-sdk-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.51.0\opentelemetry-sdk-metrics-1.51.0.jar;C:\Users\pattn\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.51.0\opentelemetry-sdk-logs-1.51.0.jar;C:\Users\pattn\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-os\4.34.0\selenium-os-4.34.0.jar;C:\Users\pattn\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.34.0\selenium-safari-driver-4.34.0.jar;C:\Users\pattn\.m2\repository\org\seleniumhq\selenium\selenium-support\4.34.0\selenium-support-4.34.0.jar;C:\Users\pattn\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\pattn\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\pattn\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\pattn\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\pattn\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\pattn\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\pattn\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\pattn\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\pattn\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\pattn\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\pattn\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\pattn\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\pattn\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\pattn\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\pattn\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\pattn\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\pattn\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\pattn\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\pattn\.m2\repository\org\slf4j\slf4j-simple\2.0.16\slf4j-simple-2.0.16.jar;C:\Users\pattn\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\pattn"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Users\pattn\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="G:\2025\My Automation Project\CucumberJavaSeleniumProject"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\pattn\AppData\Local\Temp\surefire10937770249801606500\surefirebooter-20250812144830692_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.11+9"/>
+    <property name="user.name" value="pattn"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.11+9"/>
+    <property name="localRepository" value="C:\Users\pattn\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\pattn\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.11"/>
+    <property name="user.dir" value="G:\2025\My Automation Project\CucumberJavaSeleniumProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\pattn\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/pattn/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin/server;C:/Users/pattn/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830/jre/bin;G:\oracle\product\10.2.0\db_1\BIN;C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\pattn\Downloads\cmdline-tools\bin\path-to-where-cmdline-tools-is\platform-tools;C:\Program Files\dotnet\;C:\Users\pattn\Downloads\allure-2.23.1\bin;C:\Users\pattn\Downloads\apache-maven-3.9.8-bin\apache-maven-3.9.8\bin;C:\Program Files\Git\cmd;C:\Users\pattn\appium-sdkmanager\platform-tools;C:\Users\pattn\appium-sdkmanager\cmdline-tools\bin;C:\Users\pattn\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\pattn\appium-sdkmanager\emulator;G:\oracle\product\10.2.0\db_1\BIN\sqlplusw.exe;C:\Users\pattn\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\pattn\AppData\Local\Programs\Python\Python311\;C:\Users\pattn\AppData\Local\Microsoft\WindowsApps;C:\Users\pattn\AppData\Roaming\npm;C:\Users\pattn\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2023.1.2\bin;;C:\Users\pattn\Downloads\apache-maven-3.9.8-bin\apache-maven-3.9.8;C:\Users\pattn\AppData\Local\nvm;C:\nvm4w\nodejs;C:\WINDOWS\System32;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.11+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Check logout link" classname="Check homepage functionality" time="11.493">
+    <error message="The step &apos;user is on the login page&apos; and 5 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;user is on the login page&quot;)&#10;public void user_is_on_the_login_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user enters the username and password&quot;)&#10;public void user_enters_the_username_and_password() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;hits the login button&quot;)&#10;public void hits_the_login_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;user is navigated to the dashboard page&quot;)&#10;public void user_is_navigated_to_the_dashboard_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;User clicks on welcome link&quot;)&#10;public void user_clicks_on_welcome_link() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;Logout link is displayed&quot;)&#10;public void logout_link_is_displayed() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'user is on the login page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is on the login page")
+public void user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters the username and password")
+public void user_enters_the_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("hits the login button")
+public void hits_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user is navigated to the dashboard page")
+public void user_is_navigated_to_the_dashboard_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("User clicks on welcome link")
+public void user_clicks_on_welcome_link() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Logout link is displayed")
+public void logout_link_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario: Check logout link                      # file:///G:/2025/My%20Automation%20Project/CucumberJavaSeleniumProject/src/test/resources/Features/BackgroundDemo/BackgroundDemo.feature:9
+âœ… Browser launched and navigated to login page.
+  â–  Given user is on the login page
+  â†· When user enters the username and password
+  â†· And hits the login button
+  â†· Then user is navigated to the dashboard page
+  â†· When User clicks on welcome link
+  â†· Then Logout link is displayed
+âœ… Browser closed successfully.
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pattn\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="Verigy quick launch tool bar is present" classname="Check homepage functionality" time="10.253">
+    <error message="The step &apos;user is on the login page&apos; and 5 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;user is on the login page&quot;)&#10;public void user_is_on_the_login_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user enters the username and password&quot;)&#10;public void user_enters_the_username_and_password() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;hits the login button&quot;)&#10;public void hits_the_login_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;user is navigated to the dashboard page&quot;)&#10;public void user_is_navigated_to_the_dashboard_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user lands on the dashboard page&quot;)&#10;public void user_lands_on_the_dashboard_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;Quick launch toolbar is displayed&quot;)&#10;public void quick_launch_toolbar_is_displayed() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'user is on the login page' and 5 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user is on the login page")
+public void user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user enters the username and password")
+public void user_enters_the_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("hits the login button")
+public void hits_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user is navigated to the dashboard page")
+public void user_is_navigated_to_the_dashboard_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user lands on the dashboard page")
+public void user_lands_on_the_dashboard_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Quick launch toolbar is displayed")
+public void quick_launch_toolbar_is_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario: Verigy quick launch tool bar is present # file:///G:/2025/My%20Automation%20Project/CucumberJavaSeleniumProject/src/test/resources/Features/BackgroundDemo/BackgroundDemo.feature:13
+âœ… Browser launched and navigated to login page.
+  â–  Given user is on the login page
+  â†· When user enters the username and password
+  â†· And hits the login button
+  â†· Then user is navigated to the dashboard page
+  â†· When user lands on the dashboard page
+  â†· Then Quick launch toolbar is displayed
+âœ… Browser closed successfully.
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pattn\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="google search is working." classname="to test google search functionality" time="44.145">
+    <system-out><![CDATA[
+Scenario: google search is working.                      # file:///G:/2025/My%20Automation%20Project/CucumberJavaSeleniumProject/src/test/resources/Features/GoogleSearch.feature:3
+âœ… Browser launched and navigated to login page.
+  âœ” Given browser is open and maximized                  # StepDefinitions.GoogleSearchFunctionality.browser_is_open_and_maximized()
+  âœ” When user enters anything in search box              # StepDefinitions.GoogleSearchFunctionality.user_enters_anything_in_search_box()
+  âœ” And hits enter                                       # StepDefinitions.GoogleSearchFunctionality.hits_enter()
+User navigated successfully!!
+Automated UI and Functional Testing - AI-Powered Stability - Testim.io
+  âœ” Then user should be navigated to the respective page # StepDefinitions.GoogleSearchFunctionality.user_should_be_navigated_to_the_respective_page()
+âœ… Browser closed successfully.
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pattn\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="User should be able to login successfully with valid credentials." classname="Validate login functionality of Orangle HRM application" time="21.711">
+    <system-out><![CDATA[
+Scenario: User should be able to login successfully with valid credentials. # file:///G:/2025/My%20Automation%20Project/CucumberJavaSeleniumProject/src/test/resources/Features/OrangeHRMLogin.feature:3
+âœ… Browser launched and navigated to login page.
+  âœ” Given Browser opens and user is on the login page of OrangeHRM          # StepDefinitions.OrangeHRMLoginSteps.browser_opens_and_user_is_on_the_login_page_of_orange_hrm()
+  âœ” When User enters valid username and password                            # StepDefinitions.OrangeHRMLoginSteps.user_enters_valid_username_and_password()
+  âœ” And Click on login button                                               # StepDefinitions.OrangeHRMLoginSteps.click_on_login_button()
+User logged in & Dashboard page is displayed.
+  âœ” Then User should be logged in and lands in dashboard page               # StepDefinitions.OrangeHRMLoginSteps.user_should_be_logged_in_and_lands_in_dashboard_page()
+  âœ” And Logout from application                                             # StepDefinitions.OrangeHRMLoginSteps.logout_from_application()
+âœ… Browser closed successfully.
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pattn\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="User should be able to login successfully with given data #1" classname="OrangeHRM Login Functionality" time="11.445">
+    <error message="The step &apos;User passes valid &quot;Admin&quot; and &quot;admin123&quot;&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;User passes valid {string} and {string}&quot;)&#10;public void user_passes_valid_and(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'User passes valid "Admin" and "admin123"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("User passes valid {string} and {string}")
+public void user_passes_valid_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario Outline: User should be able to login successfully with given data # file:///G:/2025/My%20Automation%20Project/CucumberJavaSeleniumProject/src/test/resources/Features/OrangeHRMParameterization.feature:12
+âœ… Browser launched and navigated to login page.
+âœ… Browser is already launched via Hooks.
+  âœ” Given Browser launches and user is on the login page                    # StepDefinitions.OrangeHRMDataStepsRunner.browser_launches_and_user_is_on_the_login_page()
+  â–  When User passes valid "Admin" and "admin123"
+  â†· And Clicks on login button                                              # StepDefinitions.OrangeHRMDataStepsRunner.clicks_on_login_button()
+  â†· Then The user is now logged in and sees the landing screen              # StepDefinitions.OrangeHRMDataStepsRunner.the_user_is_now_logged_in_and_sees_the_landing_screen()
+  â†· And Finally logs out from application                                   # StepDefinitions.OrangeHRMDataStepsRunner.finally_logs_out_from_application()
+âœ… Browser closed successfully.
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pattn\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="User should be able to login successfully with given data #2" classname="OrangeHRM Login Functionality" time="9.635">
+    <error message="The step &apos;User passes valid &quot;Admin&quot; and &quot;admin124&quot;&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;User passes valid {string} and {string}&quot;)&#10;public void user_passes_valid_and(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'User passes valid "Admin" and "admin124"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("User passes valid {string} and {string}")
+public void user_passes_valid_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario Outline: User should be able to login successfully with given data # file:///G:/2025/My%20Automation%20Project/CucumberJavaSeleniumProject/src/test/resources/Features/OrangeHRMParameterization.feature:13
+âœ… Browser launched and navigated to login page.
+âœ… Browser is already launched via Hooks.
+  âœ” Given Browser launches and user is on the login page                    # StepDefinitions.OrangeHRMDataStepsRunner.browser_launches_and_user_is_on_the_login_page()
+  â–  When User passes valid "Admin" and "admin124"
+  â†· And Clicks on login button                                              # StepDefinitions.OrangeHRMDataStepsRunner.clicks_on_login_button()
+  â†· Then The user is now logged in and sees the landing screen              # StepDefinitions.OrangeHRMDataStepsRunner.the_user_is_now_logged_in_and_sees_the_landing_screen()
+  â†· And Finally logs out from application                                   # StepDefinitions.OrangeHRMDataStepsRunner.finally_logs_out_from_application()
+âœ… Browser closed successfully.
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pattn\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="User should be able to login successfully with given data #3" classname="OrangeHRM Login Functionality" time="9.448">
+    <error message="The step &apos;User passes valid &quot;Admin&quot; and &quot;admin125&quot;&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;User passes valid {string} and {string}&quot;)&#10;public void user_passes_valid_and(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'User passes valid "Admin" and "admin125"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("User passes valid {string} and {string}")
+public void user_passes_valid_and(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario Outline: User should be able to login successfully with given data # file:///G:/2025/My%20Automation%20Project/CucumberJavaSeleniumProject/src/test/resources/Features/OrangeHRMParameterization.feature:14
+âœ… Browser launched and navigated to login page.
+âœ… Browser is already launched via Hooks.
+  âœ” Given Browser launches and user is on the login page                    # StepDefinitions.OrangeHRMDataStepsRunner.browser_launches_and_user_is_on_the_login_page()
+  â–  When User passes valid "Admin" and "admin125"
+  â†· And Clicks on login button                                              # StepDefinitions.OrangeHRMDataStepsRunner.clicks_on_login_button()
+  â†· Then The user is now logged in and sees the landing screen              # StepDefinitions.OrangeHRMDataStepsRunner.the_user_is_now_logged_in_and_sees_the_landing_screen()
+  â†· And Finally logs out from application                                   # StepDefinitions.OrangeHRMDataStepsRunner.finally_logs_out_from_application()
+âœ… Browser closed successfully.
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pattn\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="Verify login with valid credentials using classic flow" classname="Classic Login Functionality Test" time="10.268">
+    <error message="The step &apos;the user is on the login page&apos; and 3 other step(s) are undefined.&#10;You can implement these steps using the snippet(s) below:&#10;&#10;@Given(&quot;the user is on the login page&quot;)&#10;public void the_user_is_on_the_login_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;the user enters valid username and password&quot;)&#10;public void the_user_enters_valid_username_and_password() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;clicks the login button&quot;)&#10;public void clicks_the_login_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;the user should be navigated to the home page&quot;)&#10;public void the_user_should_be_navigated_to_the_home_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'the user is on the login page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("the user is on the login page")
+public void the_user_is_on_the_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("the user enters valid username and password")
+public void the_user_enters_valid_username_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("clicks the login button")
+public void clicks_the_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("the user should be navigated to the home page")
+public void the_user_should_be_navigated_to_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+@SmokeScenario @SmokeTest
+Scenario: Verify login with valid credentials using classic flow # file:///G:/2025/My%20Automation%20Project/CucumberJavaSeleniumProject/src/test/resources/Features/login.feature:6
+âœ… Browser launched and navigated to login page.
+  â–  Given the user is on the login page
+  â†· When the user enters valid username and password
+  â†· And clicks the login button
+  â†· Then the user should be navigated to the home page
+âœ… Browser closed successfully.
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pattn\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+]]></system-err>
+  </testcase>
+  <testcase name="Authenticate user with valid credentials using POM" classname="OrangeHRM Login Verification via Page Object Model" time="10.689">
+    <system-out><![CDATA[
+@POM
+Scenario Outline: Authenticate user with valid credentials using POM        # file:///G:/2025/My%20Automation%20Project/CucumberJavaSeleniumProject/src/test/resources/Features/loginPOM.feature:12
+âœ… Browser launched and navigated to login page.
+âœ… Navigated to login page.
+  âœ” Given the user opens the OrangeHRM login page                           # StepDefinitions.LoginSteps_PageFactory.openLoginPage()
+âœ… Entered credentials.
+  âœ” When the user enters username "Admin" and password "admin123" using POM # StepDefinitions.LoginSteps_PageFactory.enterCredentials(java.lang.String,java.lang.String)
+âœ… Submitted login form.
+  âœ” And submits the login form                                              # StepDefinitions.LoginSteps_PageFactory.submitLogin()
+âœ… Browser closed successfully.
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.183 (resolved driver for Chrome 138)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\pattn\.cache\selenium\chromedriver\win64\138.0.7204.183\chromedriver.exe
+]]></system-err>
+  </testcase>
+</testsuite>

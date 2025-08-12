@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunnerForBackgroundDemo" project="CucumberJavaSeleniumProject" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="StepDefinitions.TestRunnerForBackgroundDemo" time="0.105">
+    <testsuite name="Check homepage functionality" time="0.105">
+      <testcase name="Check logout link" classname="Check homepage functionality" time="0.102"/>
+      <testcase name="Verigy quick launch tool bar is present" classname="Check homepage functionality" time="0.003"/>
+    </testsuite>
+  </testsuite>
+</testrun>

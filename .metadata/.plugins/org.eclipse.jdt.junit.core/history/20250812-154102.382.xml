@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunTest" project="CucumberBDDCMD" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="Runner.RunTest" time="0.076">
+    <testsuite name="Validate login functonality" time="0.076">
+      <testcase name="Check login with valid credentials" classname="Validate login functonality" time="0.071"/>
+      <testcase name="Check login with invalid credentials" classname="Validate login functonality" time="0.005"/>
+    </testsuite>
+  </testsuite>
+</testrun>

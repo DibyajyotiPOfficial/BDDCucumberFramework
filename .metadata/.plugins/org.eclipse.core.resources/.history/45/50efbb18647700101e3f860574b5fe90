@@ -1,0 +1,52 @@
+package steps;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class LoginSteps {
+
+	@Given("user is on login page1")
+	public void user_is_on_login_page1() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("user enters valid username and password")
+	public void user_enters_valid_username_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("Clicks on login button")
+	public void clicks_on_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("user is navigated to the home page")
+	public void user_is_navigated_to_the_home_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	    
+	    @Given("user is on login page")
+	    public void user_is_on_login_page() {
+	        // Write code here that turns the phrase above into concrete actions
+	        throw new io.cucumber.java.PendingException();
+	    }
+	    @When("user enters invalid username and password")
+	    public void user_enters_invalid_username_and_password() {
+	        // Write code here that turns the phrase above into concrete actions
+	        throw new io.cucumber.java.PendingException();
+	    }
+	    @When("hits the submit button")
+	    public void hits_the_submit_button() {
+	        // Write code here that turns the phrase above into concrete actions
+	        throw new io.cucumber.java.PendingException();
+	    }
+	    @Then("error message is displayed - Invalid credentials")
+	    public void error_message_is_displayed_invalid_credentials() {
+	        // Write code here that turns the phrase above into concrete actions
+	        throw new io.cucumber.java.PendingException();
+	    } 
+	}
+
+
+}

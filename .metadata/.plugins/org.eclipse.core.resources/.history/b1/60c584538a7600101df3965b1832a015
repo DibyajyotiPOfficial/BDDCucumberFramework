@@ -1,0 +1,40 @@
+package pageFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class OrangeHRM_Login_PF {
+	
+	
+	WebDriver driver;
+	public OrangeHRM_Login_PF(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, OrangeHRM_Login_PF.class);
+	}
+	
+	@FindBy(xpath="//input[@placeholder='Username']")
+	WebElement input_username;
+	
+	@FindBy(xpath="//input[@placeholder='Password']")
+	WebElement input_password;
+	
+	@FindBy(xpath="//button[@type='submit']")
+	WebElement btn_login;
+	
+	
+	public void enterUsername(String usrname) {
+		input_username.sendKeys();
+	}
+	public void enterPassword(String psdword) {
+		input_password.sendKeys(psdword);
+	}
+	public void clickLoginBtn() {
+		btn_login.click();
+	}
+	
+	
+	
+
+}

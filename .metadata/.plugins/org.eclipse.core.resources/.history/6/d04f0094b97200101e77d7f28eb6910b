@@ -1,0 +1,8 @@
+Feature: Validate login functionality of Orangle HRM application
+
+	Scenario: User should be able to login successfully with valid credentials.
+
+		Given Browser opens and user is on the login page of OrangeHRM
+		When User enters valid username and password
+		And Click on login button
+		Then User should be logged in and lands in dashboard page

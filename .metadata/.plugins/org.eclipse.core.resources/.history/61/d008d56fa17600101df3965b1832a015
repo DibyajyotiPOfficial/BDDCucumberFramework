@@ -1,0 +1,30 @@
+package StepsForHooks;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class HooksStepsDemo {
+	
+	public void browserSetup() {
+		
+	}
+
+	@Given("now user is in the login page")
+	public void now_user_is_in_the_login_page() {
+	}
+
+	@When("if user enters username and password")
+	public void if_user_enters_username_and_password() {
+	}
+
+	@And("clicks on the login button")
+	public void clicks_on_the_login_button() {
+	}
+
+	@Then("user then navigates to landing page")
+	public void user_then_navigates_to_landing_page() {
+	}
+
+}

@@ -1,0 +1,14 @@
+Feature: Validate login functionality of Orangle HRM application
+
+  Scenario Outline: User should be able to login successfully with valid credentials.
+    Given Browser opens and user is on the login page of OrangeHRM
+    When User enters valid <username> and <password>
+    And Click on login button
+    Then User should be logged in and lands in dashboard page
+    And Logout from application
+    
+    Examples: 
+    |username||password|
+    |Admin||admin123|
+    |Admin||admin124|
+    |Admin||admin125|

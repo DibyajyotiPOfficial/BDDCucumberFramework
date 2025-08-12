@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Runner.TestRun&apos; to &apos;RunTest&apos;&#x0D;&#x0A;- Original project: &apos;CucumberBDDCMD&apos;&#x0D;&#x0A;- Original element: &apos;Runner.TestRun&apos;&#x0D;&#x0A;- Renamed element: &apos;Runner.RunTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestRun&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;Runner{TestRun.java[TestRun" matchStrategy="1" name="RunTest" qualified="false" references="true" similarDeclarations="false" stamp="1754992402131" textual="false" version="1.0"/>
+</session>

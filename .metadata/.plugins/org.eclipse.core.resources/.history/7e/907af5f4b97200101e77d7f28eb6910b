@@ -1,0 +1,47 @@
+package StepDefinitions;
+
+import java.time.Duration;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class OrangeHRMLoginSteps {
+	
+	WebDriver driver = null;
+	
+	@Given("Browser opens and user is on the login page of OrangeHRM")
+	public void browser_opens_and_user_is_on_the_login_page_of_orange_hrm() {
+		System.setProperty("webdriver.chrome.driver",
+				"G:\\2025\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.google.com");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3000));
+		driver.manage().window().maximize();
+	}
+
+	@When("User enters valid username and password")
+	public void user_enters_valid_username_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@And("Click on login button")
+	public void click_on_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("User should be logged in and lands in dashboard page")
+	public void user_should_be_logged_in_and_lands_in_dashboard_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+
+
+}
