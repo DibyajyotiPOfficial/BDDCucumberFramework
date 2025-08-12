@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="G:\2025\My Automation Project"/>
+			<item value="G:\2025\My Automation Project\VWO\src\vwo_endtoend_functionality\VWO_EndToEndFunctionality.java"/>
 			<item value="G:\2025\My Automation Project\OrangeHRM\src\orangeHRM\OrangeHRM_EndToEnd_Validation.java"/>
 			<item value="G:\2025\My Automation Project\OrangeHRM\src"/>
 			<item value="G:\2025\My Automation Project\Orange HRM"/>
@@ -47,10 +49,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="CucumberJavaSeleniumProject"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="CucumberJavaSeleniumProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

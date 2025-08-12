@@ -1,0 +1,40 @@
+package StepsForBackground;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class BackGroundDemoSteps {
+
+	@Given("user is on the login page")
+	public void user_is_on_the_login_page() {
+	}
+
+	@When("user enters the username and password")
+	public void user_enters_the_username_and_password() {
+	}
+
+	@When("hits the login button")
+	public void hits_the_login_button() {
+	}
+
+	@Then("user is navigated to the dashboard page")
+	public void user_is_navigated_to_the_dashboard_page() {
+	}
+
+	@When("User clicks on welcome link")
+	public void user_clicks_on_welcome_link() {
+	}
+
+	@Then("Logout link is displayed")
+	public void logout_link_is_displayed() {
+	}
+
+	@When("user lands on the dashboard page")
+	public void user_lands_on_the_dashboard_page() {
+	}
+
+	@Then("Quick launch toolbar is displayed")
+	public void quick_launch_toolbar_is_displayed() {
+	}
+}

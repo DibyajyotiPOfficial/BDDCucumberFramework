@@ -1,0 +1,22 @@
+Feature: Feature to demo tags
+
+@Smoke
+Scenario: Sample1
+
+Given
+When
+Then
+
+@Regression
+Scenario: Sample2
+
+Given
+When
+Then
+
+@Sanity
+Scenario: Sample3
+
+Given
+When
+Then

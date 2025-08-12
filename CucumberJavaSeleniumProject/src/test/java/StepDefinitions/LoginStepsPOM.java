@@ -1,0 +1,67 @@
+package StepDefinitions;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.junit.Assert;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.*;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.loginpage;
+
+public class LoginStepsPOM {
+
+//    WebDriver driver;
+//    loginpage login;
+//
+//    @Before
+//    public void setUp() {
+//        WebDriverManager.chromedriver().setup(); // Automatically handles driver version
+//        driver = new ChromeDriver();
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//        driver.manage().window().maximize();
+//        System.out.println("✅ Browser launched.");
+//    }
+//
+//    @After
+//    public void tearDown() {
+//        if (driver != null) {
+//            driver.quit();
+//            System.out.println("✅ Browser closed successfully.");
+//        }
+//    }
+//
+//    @Given("the user opens the OrangeHRM login page")
+//    public void openLoginPage() {
+//        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+//        login = new loginpage(driver);
+//        System.out.println("✅ Navigated to login page.");
+//    }
+//
+//    @When("the user enters username {string} and password {string} using POM")
+//    public void enterCredentials(String username, String password) {
+//        login.enterUsername(username);
+//        login.enterPassword(password);
+//    }
+//
+//    @And("submits the login form")
+//    public void submitLogin() {
+//        login.clickLoginBtn();
+//    }
+//
+//    @Then("the user should be redirected to the dashboard using POM")
+//    public void verifyDashboard() {
+//        try {
+//            boolean isDashboardVisible = login.isDashboardDisplayed();
+//            Assert.assertTrue("❌ Dashboard not displayed!", isDashboardVisible);
+//            System.out.println("✅ Dashboard is visible. Login successful.");
+//        } catch (Exception e) {
+//            System.err.println("❌ Error verifying dashboard: " + e.getMessage());
+//            Assert.fail("Dashboard verification failed due to exception.");
+//        }
+//    }
+}

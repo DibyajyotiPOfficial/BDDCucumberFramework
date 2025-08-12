@@ -372,11 +372,6 @@ public class VWO_EndToEndFunctionality {
 			System.out.println(links.getText());
 			
 		}
-		
-		
-		
-		
-		
 
 	}
 
